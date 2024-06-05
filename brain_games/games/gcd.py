@@ -1,6 +1,7 @@
 import prompt
 from random import randint
 
+
 def nod():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -15,7 +16,7 @@ def nod():
         while a != 0 and b != 0:
             if a > b:
                 a = a % b
-            else :
+            else:
                 b = b % a
         res = a + b
         if users_answer == res:

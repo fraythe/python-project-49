@@ -2,6 +2,7 @@ import prompt
 from random import randint
 import math
 
+
 def is_prime():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -28,4 +29,3 @@ def is_prime():
             print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
     congrats = print(f'Congratulations, {name}!')
     return congrats
-

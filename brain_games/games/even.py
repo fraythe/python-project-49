@@ -16,7 +16,7 @@ def is_even():
             print('Correct!')
             index = index + 1
         elif number % 2 == 0 and users_answer.lower() == 'no':
-            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!") 
+            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
         elif number % 2 != 0 and users_answer.lower() == 'yes':
             print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
         elif users_answer.lower != 'no' and users_answer.lower() != 'yes':

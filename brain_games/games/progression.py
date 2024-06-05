@@ -1,6 +1,7 @@
 import prompt
 from random import randint
 
+
 def progr():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -24,4 +25,3 @@ def progr():
             print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
     congrats = print(f'Congratulations, {name}!')
     return congrats
-
