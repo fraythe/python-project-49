@@ -1,5 +1,6 @@
 import prompt
 from random import randint
+import math
 
 
 def is_prime():
