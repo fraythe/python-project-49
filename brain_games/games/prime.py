@@ -1,6 +1,5 @@
 import prompt
 from random import randint
-import math
 
 
 def is_prime():
@@ -22,10 +21,12 @@ def is_prime():
             for element in divisors:
                 if num % element == 0:
                     right_answer = 'no'
-        if users_answer.lower() == right_answer:
+        if users_answer.lower() != right_answer:
+            sorry = print(f"'{users_answer} is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
+            return sorry
+            break
+        else:
             print('Correct!')
             index = index + 1
-        else:
-            print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
     congrats = print(f'Congratulations, {name}!')
     return congrats
