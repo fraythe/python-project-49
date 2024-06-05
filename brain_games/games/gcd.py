@@ -18,11 +18,13 @@ def nod():
                 a = a % b
             else:
                 b = b % a
-        res = a + b
-        if users_answer == res:
+        right_answer = a + b
+        if users_answer != right_answer:
+            sorry = print(f"'{users_answer} is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
+            return sorry
+            break
+        else:
             print('Correct!')
             index = index + 1
-        else:
-            print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{res}'.\nLet's try again, {name}!")
     congrats = print(f'Congratulations, {name}!')
     return congrats
