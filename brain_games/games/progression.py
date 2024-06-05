@@ -13,14 +13,15 @@ def progr():
         step = randint(1, 9)
         numbers = list(range(randint(0, 15), stop, step))[:10]
         random_index = randint(0, len(numbers) - 1)
-        right_answer = numbers[random_index]
+        r = numbers[random_index]
         numbers[random_index] = '..'
         string = ' '.join(map(str, numbers))
         print(f'Question: {string}')
-        users_answer = prompt.integer('Your answer: ')
-        if users_answer != right_answer:
-            sorry = print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
-            return sorry
+        a = prompt.integer('Your answer: ')
+        if a != r:
+            srry = print(f"'{a}' is wrong answer ;(. Correct answer was '{r}'.")
+            srry2 = print(f"Let's try again, {name}!")
+            return srry, srry2
             break
         else:
             print('Correct!')

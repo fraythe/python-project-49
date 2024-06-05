@@ -12,19 +12,20 @@ def is_prime():
     while index < 3:
         num = randint(0, 100)
         print(f'Question: {num}')
-        users_answer = prompt.string('Your answer: ')
+        a = prompt.string('Your answer: ')
         if num <= 1:
-            right_answer = 'no'
+            r = 'no'
         else:
-            right_answer = 'yes'
+            r = 'yes'
             number_sqrt = int(math.sqrt(num))
             divisors = range(2, (number_sqrt + 1))
             for element in divisors:
                 if num % element == 0:
-                    right_answer = 'no'
-        if users_answer.lower() != right_answer:
-            sorry = print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
-            return sorry
+                    r = 'no'
+        if a.lower() != r:
+            srry = print(f"'{a}' is wrong answer ;(. Correct answer was '{r}'.")
+            srry2 = print(f"Let's try again, {name}!")
+            return srry, srry2
             break
         else:
             print('Correct!')

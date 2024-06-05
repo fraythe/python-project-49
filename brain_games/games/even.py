@@ -11,14 +11,15 @@ def is_even():
     while index < 3:
         number = randint(1, 100)
         print(f'Question: {number}')
-        users_answer = prompt.string('Your answer: ')
+        a = prompt.string('Your answer: ')
         if number % 2 == 0:
-            right_answer = 'yes'
+            r = 'yes'
         else:
-            right_answer = 'no'
-        if users_answer.lower() != right_answer:
-            sorry = print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
-            return sorry
+            r = 'no'
+        if a.lower() != r:
+            srry = print(f"'{a}' is wrong answer ;(. Correct answer was '{r}'.")
+            srry2 = print(f"Let's try again, {name}!")
+            return srry, srry2
             break
         else:
             print('Correct!')

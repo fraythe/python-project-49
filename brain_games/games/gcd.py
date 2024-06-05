@@ -9,19 +9,20 @@ def nod():
     print('Find the greatest common divisor of given numbers.')
     index = 0
     while index < 3:
-        a = randint(1, 100)
-        b = randint(1, 100)
-        print(f'Question: {a} {b}')
-        users_answer = prompt.integer('Your answer: ')
-        while a != 0 and b != 0:
-            if a > b:
-                a = a % b
+        num1 = randint(1, 100)
+        num2 = randint(1, 100)
+        print(f'Question: {num1} {num2}')
+        a = prompt.integer('Your answer: ')
+        while num1 != 0 and num2 != 0:
+            if num1 > num2:
+                num1 = num1 % num2
             else:
-                b = b % a
-        right_answer = a + b
-        if users_answer != right_answer:
-            sorry = print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
-            return sorry
+                num2 = num2 % num1
+        r = num1 + num2
+        if a != r:
+            srry = print(f"'{a}' is wrong answer ;(. Correct answer was '{r}'.")
+            srry2 = print(f"Let's try again, {name}!")
+            return srry, srry2
             break
         else:
             print('Correct!')
