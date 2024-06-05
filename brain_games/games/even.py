@@ -12,14 +12,16 @@ def is_even():
         number = randint(1, 100)
         print(f'Question: {number}')
         users_answer = prompt.string('Your answer: ')
-        if number % 2 == 0 and users_answer.lower() == 'yes' or (number % 2 != 0 and users_answer.lower() == 'no'):
+        if number % 2 == 0:
+            right_answer = 'yes'
+        else:
+            right_answer = 'no'
+        if users_answer.lower() != right_answer:
+            sorry = print(f"'{users_answer} is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
+            return sorry
+            break
+        else:
             print('Correct!')
             index = index + 1
-        elif number % 2 == 0 and users_answer.lower() == 'no':
-            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
-        elif number % 2 != 0 and users_answer.lower() == 'yes':
-            print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
-        elif users_answer.lower != 'no' and users_answer.lower() != 'yes':
-            print(f"'{users_answer}' is wrong answer ;(.\nLet's try again, {name}!")
     congrats = print(f'Congratulations, {name}!')
     return congrats
