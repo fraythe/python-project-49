@@ -22,7 +22,7 @@ def calc():
         print(f'Question: {num1} {operator} {num2}')
         users_answer = prompt.integer('Your answer: ')
         if users_answer != right_answer:
-            sorry = print(f"'{users_answer} is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
+            sorry = print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
             return sorry
             break
         else:

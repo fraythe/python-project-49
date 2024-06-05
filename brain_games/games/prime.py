@@ -23,7 +23,7 @@ def is_prime():
                 if num % element == 0:
                     right_answer = 'no'
         if users_answer.lower() != right_answer:
-            sorry = print(f"'{users_answer} is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
+            sorry = print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {name}!")
             return sorry
             break
         else:
