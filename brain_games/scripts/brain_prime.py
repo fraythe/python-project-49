@@ -4,6 +4,7 @@
 from brain_games.games.prime import is_prime
 import prompt
 
+
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')

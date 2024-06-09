@@ -1,5 +1,6 @@
 from random import randint
 
+
 def nod():
     num1 = randint(1, 100)
     num2 = randint(1, 100)

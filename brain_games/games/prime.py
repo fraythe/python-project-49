@@ -1,6 +1,7 @@
 from random import randint
 import math
 
+
 def is_prime():
     num = randint(0, 100)
     question = f'{num}'
