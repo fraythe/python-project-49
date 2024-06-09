@@ -13,4 +13,4 @@ def calc():
     elif operator == '*':
         r = num1 * num2
     question = f'{num1} {operator} {num2}'
-    return question, r 
+    return question, r
