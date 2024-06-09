@@ -8,9 +8,13 @@ Brain Games is a set of five console games built on the principle of popular mob
 Games:
 
 Calculator. Arithmetic expressions to be evaluated
+
 Progression. Finding missing numbers in a sequence of numbers
+
 Definition of an even number
+
 Finding the Greatest Common Divisor
+
 Definition of a Prime Number
 
 The minimal requirements for installing the module is Python version 3.x and Poetry.
