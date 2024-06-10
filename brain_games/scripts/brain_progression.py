@@ -16,10 +16,11 @@ def main():
         print(f'Question: {question}')
         a = prompt.integer('Your answer: ')
         if a != r:
-            srry = print(f"'{a}' is wrong answer ;(. Correct answer was '{r}'.")
-            srry2 = print(f"Let's try again, {name}!")
-            return srry, srry2
-            break
+            srry = f"'{a}' is wrong answer ;(. Correct answer was '{r}'."
+            srry2 = f"Let's try again, {name}!"
+            print(srry)
+            print(srry2)
+            return
         else:
             print('Correct!')
             index = index + 1
